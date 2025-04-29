@@ -10,7 +10,7 @@ load_dotenv()  # Load environment variables from .env
 api_id = int(os.getenv('API_ID'))
 api_hash = os.getenv('API_HASH')
 session_name = 'uploader_session'
-target_user = os.getenv('TARGET_USER', 'me')
+target_user = os.getenv('TARGET_USER', '8020340814')
 # =====================
 
 def download_file(url, filename):

@@ -2,7 +2,7 @@ import os
 import requests
 from tqdm import tqdm
 from telethon.sync import TelegramClient
-from dotenv import load_dotenv
+from dotenv import env
 
 load_dotenv()  # Load environment variables from .env
 

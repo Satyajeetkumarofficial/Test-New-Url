@@ -1,0 +1,18 @@
+name: telegram-uploader
+
+services:
+  - name: uploader
+    type: worker
+    git:
+      url: https://github.com/yourusername/telegram-url-uploader.git
+    run_command: python url_uploader.py
+    instance_type: micro
+    regions:
+      - fra
+    env:
+      - name: API_ID
+        value: your_api_id
+      - name: API_HASH
+        value: your_api_hash
+      - name: TARGET_USER
+        value: me
